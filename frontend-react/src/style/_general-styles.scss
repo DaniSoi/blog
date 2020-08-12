@@ -1,0 +1,148 @@
+html {
+  //scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6; // a nice default line height to use
+
+  //stick the footer to the bottom at every viewport size
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--clr-primary);//#ebebf6;
+  padding: 2em 2em 8em 2em;
+}
+
+section {
+  // keeps the sections from touching the edges of the screen
+  padding: 5em 2.5em; // for text margin or padding em's are the best because they are relative to the font size
+}
+
+img {
+  display: block; // good for default setup for images and prevents some issues
+  max-width: 100%; // so the images won't go bigger than their parents
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+a {
+  text-decoration: none; // no underline for all links by default
+}
+
+ul {
+  list-style: none; // makes the bullets of the list disappear
+}
+
+:focus {
+  // a general focus state for when using TAB to select:
+  // creates an outline to emphasize the focused element
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block; // without it the transition won't work
+  padding: 0.5em 2.5em;
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  text-transform: uppercase; // all button titles uppercase
+  letter-spacing: 2px; // gap between letters
+  transition: transform 200ms ease-in-out; // in 200ms transforms on and off
+
+  &:hover {
+    transform: scale(1.05);
+    // on hover transforms the button size to be x1.1
+  }
+}
+
+@media (min-width: 600px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+.read-more-btn {
+  color: var(--clr-light);
+  padding: 1em 1.5em;
+  font-size: 0.8rem;
+}
+
+.quote {
+  color: var(--clr-secondary);
+  padding: 0 1em;
+}
+
+// used combined with JS resize event listener
+// to prevent transitions during screen resize
+.resize-transition-stopper * {
+  transition: none !important;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  color: var(--clr-accent) !important;
+}
+
+.min-h-100 {
+  min-height: 100vh;
+}
+
+.success {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+.error-text {
+  color: red !important;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+.long-text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; // change for max num of lines
+  -webkit-box-orient: vertical;;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}

@@ -1,0 +1,71 @@
+#writePostModal {
+  width: 40%;
+
+  #writePostModalTitle {
+    font-family: 'Comic Sans MS', serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: #36529a;
+  }
+
+  #writePostForm {
+    margin-top: 30px;
+
+    input[type=text], textarea {
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      padding: 3px 0 3px 3px;
+      margin: 5px 1px 3px 0;
+      border: 2px solid #DDDDDD;
+      font-size: 20px;
+
+      &:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        padding: 3px 0 3px 3px;
+        margin: 5px 1px 3px 0;
+        border: 2px solid rgba(81, 203, 238, 1);
+      }
+    }
+
+    input[type=text] {
+      width: 70%;
+      height: 20px;
+    }
+
+    textarea {
+      width: 70%;
+      height: 150px;
+      resize: none;
+      white-space: pre-wrap;
+    }
+
+    button {
+      width: 70%;
+      padding: 1% 23% 1% 23%;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #closeBtn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

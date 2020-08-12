@@ -1,0 +1,72 @@
+:root {
+  //font families
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-headers: 'Cardo', serif;
+
+  //font weights
+  --fw-reg: 300;
+  --fw-med: 500;
+  --fw-bold: 900;
+
+  //theme colors
+  --clr-light: white;//#fff;//#f2f6f8;//#fff;
+  --clr-primary: #eeeeee;
+  --clr-secondary: #B9B9B9;//#929aab;
+  --clr-dark: #393e46;//#100303;//#303030;
+  --clr-accent: #6FBBB2; //#6FBBB2;//#43d8c9;//#16e0bd;
+
+  // white palette
+  //#faf0e6 • #fff5ee • #fdf5e6 • #faf0e6 • #faebd7
+
+  // grey palette
+  //#eeeeee • #dddddd • #cccccc • #bbbbbb • #aaaaaa
+
+  //font sizes
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.5rem;
+  --fs-h5: 1.25rem;
+  --fs-body: 1.1rem;
+  //--fs-btn: 1rem;
+  //--fs-h1: 3.5rem;
+  //--fs-h2: 2.75rem;
+  //--fs-h3: 1.75rem;
+  //--fs-body: 1.5rem;
+
+  //box shadow
+  --bs:
+    0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  // two shadows (one is closer to content and the other is farther)
+  // on top of each other to make the box shadow look darker and
+  // deeper which helps increase the shadow realism
+}
+
+@media (min-width: 900px) {
+  //overwrite font sizes (bigger) on big screens
+  //:root {
+  //  --fs-h1: 4.5rem;
+  //  --fs-h2: 3.75rem;
+  //  --fs-h3: 2.5rem;
+  //  --fs-body: 1.125rem;
+  //}
+
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 4.25rem;
+    --fs-h3: 2.5rem;
+    --fs-h4: 2.25rem;
+    --fs-h5: 1.75rem;
+    --fs-body: 1.125rem;
+    //--fs-btn: 1.2rem;
+  }
+
+  //:root {
+  //  --fs-h1: 4.75rem;
+  //  --fs-h2: 4rem;
+  //  --fs-h3: 2rem;
+  //  --fs-body: 1.5rem;
+  //}
+}

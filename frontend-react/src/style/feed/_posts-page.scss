@@ -1,0 +1,42 @@
+@import "search-bar";
+
+.posts-page {
+  padding: 2em 0;
+
+  .posts-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 1em auto;
+    padding: 1em 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .posts-page {
+    .posts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, min-content));
+      grid-column-gap: 1.5em;
+      grid-row-gap: 1.5em;
+      justify-content: center;
+
+      .post {
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .first-post {
+        grid-column: 1/ span 2;
+
+        .post__img {
+          max-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+}

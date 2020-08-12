@@ -1,0 +1,21 @@
+#add-but-container {
+  //top: 90%;
+  //position: fixed;
+  //right: 3%;
+  //z-index: 2; // sit on top
+
+  #addBtn {
+    top: 90%;
+    position: fixed;
+    right: 3%;
+    z-index: 2; // sit on top
+    background-color: #324385;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    #add-sign {
+    }
+  }
+}

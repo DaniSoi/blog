@@ -1,0 +1,25 @@
+@import "custom-props";
+@import "general-styles";
+@import "typography";
+@import "header";
+@import "feed/profile-nav";
+@import "feed/follow-me";
+@import "feed/post";
+@import "feed/single-post-page";
+@import "feed/about-section";
+@import "feed/about-me-page";
+@import "feed/feed";
+@import "feed/posts-page";
+@import "feed/add-button";
+@import "feed/modals";
+@import "feed/form-modal";
+@import "feed/delete-post-modal";
+@import "feed/msg";
+@import "footer";
+
+*,
+*::before,
+*::after {
+  // includes padding and border in the width and height calculation
+  box-sizing: border-box;
+}

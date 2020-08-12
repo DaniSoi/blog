@@ -1,0 +1,4 @@
+0 22 * * * bash /home/daniel/daniel-github/web_projects/blog/other/delete_old_verify_tokens.sh
+1 22 * * * bash /home/daniel/daniel-github/web_projects/blog/other/delete_unverified_users.sh
+2 22 * * * bash /home/daniel/daniel-github/web_projects/blog/other/delete_old_sessions.sh
+3 22 * * * bash /home/daniel/daniel-github/web_projects/blog/other/delete_temp_uploads.sh

@@ -1,0 +1,63 @@
+button {
+  font-size: 24px;
+  font-weight: bold;
+  background: #36529a;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.rootFormPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: #ededf8;
+}
+.rootFormPage .formContainer {
+  padding: 3em;
+  margin: 10% auto 10% auto;
+  width: 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.rootFormPage .formContainer:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.formNav {
+  text-align: end;
+}
+.formNav .formLink {
+  padding: 5px;
+  color: black;
+}
+.formNav .formLink:hover {
+  opacity: 0.7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  padding: 15px;
+  font-size: 18px;
+}
+form .input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px 0 10px 0;
+}
+form .input label {
+  font-size: 0.8em;
+}
+form .input input {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=form-routes.css.map */

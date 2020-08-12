@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+@import "header";
+@import "feed/search-bar";
+@import "feed/post-box";
+@import "feed/add-button";
+@import "feed/modals";
+@import "feed/add-post-modal";
+@import "feed/delete-post-modal";
+@import "feed/msg";
+@import "footer";
+@import "btn-theme";
+@import "root_background";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  // header & footer
+  .top-bottom-theme {
+    background: #4e77c7;
+    color: #fff;
+  }
+
+  // search bar & postsView & add button & modals
+  #root {
+    flex: 8;
+
+    main {
+      .container {
+        margin: auto;
+        border: 1px;
+        width: 75%;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        white-space: pre-line;
+      }
+    }
+  }
+}

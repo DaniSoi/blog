@@ -1,0 +1,73 @@
+header {
+  text-align: center;
+  padding: 3%;
+  flex: 3;
+  box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.4);
+  z-index: 1; /* Sit on top */
+
+  #avatar {
+    width: 18vmax;
+  }
+
+  h1 {
+    font-family: 'Cardo', serif;
+    font-size: 2.5vmin;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    line-height: 2.2em;
+  }
+
+  h1 b {
+    font-family: 'EB Garamond', serif;
+    font-size: 10vmin;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    font-style: normal;
+    padding: 0.3em;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #socialNav {
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 5px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      img {
+        width: 3vmax;
+      }
+    }
+
+    #link1 {
+      order: 1;
+    }
+
+    #link2 {
+      order: 2;
+    }
+
+    #link3 {
+      order: 3;
+    }
+  }
+
+  #logoutNav {
+    text-align: end;
+
+    #logoutLink {
+      padding: 5px;
+      color: white;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

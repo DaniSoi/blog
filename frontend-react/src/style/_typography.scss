@@ -1,0 +1,71 @@
+//Typography
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.6;
+  margin: 0;
+  font-family: var(--ff-headers);
+  font-style: italic;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+}
+
+p {
+  font-size: var(--fs-body);
+}
+
+.section__title {
+  // for text margin or padding em's are the best because they are relative to the font size
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro {
+  strong {
+    display: block; // so that 'Daniel Soifer' will be displayed always on it's own line
+  }
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  padding: 0.25em 1em; // add padding between the text and the edges of the subtitle box
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}

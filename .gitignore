@@ -1,0 +1,11 @@
+# Default ignored files
+*/workspace.xml
+*/node_modules
+node_modules
+*/dist
+*/build
+*/.idea
+.idea
+*/.DS_Store
+*/.env*
+*/uploads

@@ -1,0 +1,38 @@
+.single-post-page {
+  padding: 1em 0 3em 0;
+
+  .go-back-btn-container {
+    margin-bottom: 4em;
+
+    .go-back-btn {
+      font-size: 2.5rem;
+      padding: 0.5em 0.6em;
+      color: var(--clr-dark);
+      border-radius: 50px;
+      transition: background-color 250ms ease-in-out;
+
+      &:hover {
+        background-color: var(--clr-light);
+        //opacity: 0.8;
+      }
+    }
+  }
+
+  .post {
+    max-width: 1000px;
+
+    .post__img {
+      max-height: 600px;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .single-post-page {
+    .go-back-btn-container {
+      .go-back-btn {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

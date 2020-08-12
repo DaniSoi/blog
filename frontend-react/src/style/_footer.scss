@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--clr-primary);//var(--clr-dark);//#dddddd;
+  background-image: url("../assets/imgs/footer-background.png");
+  background-blend-mode: hard-light;
+  color: var(--clr-dark);
+  font-family: 'DejaVu Sans', serif;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 2.2em;
+  padding: 3em;
+  margin-top: auto; // stick footer to bottom while body is flex
+
+  .footer__text {
+    position: relative;
+    top: 1.75em;
+
+    em {
+      color: var(--clr-accent);
+    }
+  }
+}

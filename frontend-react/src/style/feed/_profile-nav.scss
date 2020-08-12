@@ -1,0 +1,66 @@
+.profile-nav {
+  width: 100%;
+  margin-bottom: 2.5em;
+
+  .profile-nav__inner-container {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    margin: 0;
+
+    .profile-nav__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+
+      .profile-nav__link {
+        color: var(--clr-dark);
+        font-weight: var(--fw-bold);
+        padding: 0.5em;
+        cursor: pointer;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .active-link {
+        border-radius: 25px;
+        background-color: var(--clr-accent);
+        color: var(--clr-light);
+      }
+    }
+
+    .profile-nav__item + .profile-nav__item {
+      &::before {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 2em;
+        margin: 0 2em;
+        background: var(--clr-secondary);
+        opacity: 0.35; // make sure the pseudo element doesn't stand out too much
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-nav {
+    .profile-nav__inner-container {
+      padding: 0;
+
+      .profile-nav__item {
+        font-size: 1rem;
+      }
+
+      .profile-nav__item + .profile-nav__item {
+        &::before {
+          margin: 0 1em;
+        }
+      }
+    }
+  }
+}

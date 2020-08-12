@@ -1,0 +1,72 @@
+.header {
+  .nav-bar {
+    min-height: 75px;
+    max-height: 75px;
+    padding: 1.5em 3em;
+    background-color: white;
+    color: var(--clr-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      position: absolute;
+      top: -15px;
+      left: 1em;
+      max-width: 100px;
+      margin-left: 1em;
+      padding: 0;
+    }
+
+    .logout-btn {
+      background-color: transparent;
+      color: var(--clr-dark);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.header__banner {
+  background: var(--clr-accent);
+  background-image: url("https://picsum.photos/2000/1400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-dark);
+  text-align: center;
+  min-height: 400px;
+
+  .header__banner-content {
+    h1 {
+      font-family: 'Cardo', serif;
+      font-style: italic;
+      display: inline-block;
+      background-color: white;
+      border-radius: 2px;
+      padding: 0.25em 1.5em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    .nav-bar {
+      padding: 1.5em 0.5em;
+      .social-nav {
+        display: none;
+      }
+
+      .logo {
+        left: 0;
+      }
+    }
+
+    .header__banner {
+      .header__banner-content {
+        h1 {
+          padding: 0 0.25em;
+        }
+      }
+    }
+  }
+}

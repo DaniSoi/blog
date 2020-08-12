@@ -1,0 +1,26 @@
+.about {
+  padding: 2em;
+  background-color: var(--clr-light);
+  box-shadow: var(--bs);
+
+  .about__content {
+
+  }
+
+  .about__img {
+    box-shadow: var(--bs);
+  }
+
+  .about__title {
+    //text-align: center;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    font-style: normal;
+  }
+
+  .about__body {
+    margin-top: 2em;
+    font-style: italic;
+    //font-size: 1.6rem;
+  }
+}
